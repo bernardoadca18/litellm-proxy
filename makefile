@@ -60,7 +60,7 @@ shell-litellm:
 	docker exec -it litellm-proxy /bin/sh
 
 shell-postgres:
-	docker exec -it litellm-postgres psql -U ${POSTGRES_USER} -d ${POSTGRES_DB}
+	@export $(grep -v '^#' .env | xargs) && docker exec -it litellm-postgres psql -U $$POSTGRES_USER -d $$POSTGRES_DB
 
 shell-redis:
 	docker exec -it litellm-redis redis-cli -a ${REDIS_PASSWORD}

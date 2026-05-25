@@ -39,3 +39,5 @@ grafana-data/
 # OS
 .DS_Store
 Thumbs.db
+
+repomix-output.xml

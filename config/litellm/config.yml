@@ -8,7 +8,7 @@ model_list:
       api_key: "os.environ/GEMINI_API_KEY_1"
       rpm: 15
       tpm: 250000
-      timeout: ${LITELLM_REQUEST_TIMEOUT:-60}
+      timeout: 60
   
   - model_name: gemini-flash
     litellm_params:
@@ -182,16 +182,16 @@ model_list:
 # ============================================================
 router_settings:
   routing_strategy: "simple-shuffle"
-  num_retries: ${LITELLM_NUM_RETRIES:-3}
-  request_timeout: ${LITELLM_REQUEST_TIMEOUT:-60}
+  num_retries: 3
+  request_timeout: 60
   cooldown_time: 30
   allowed_fails: 2
   enable_loadbalancing: true
   
   # Fallback entre grupos
   fallbacks: [
-    {"gemini-flash": ["gemini-fallback-flash", "gemini-flash-lite"]},
-    {"gemini-pro": ["gemini-fallback-pro", "gemini-flash"]},
+    {"gemini-flash": ["gemini-flash-lite", "gemini-fallback-flash"]},
+    {"gemini-pro": ["gemini-flash", "gemini-fallback-pro"]},
     {"gemini-flash-lite": ["gemini-fallback-flash"]}
   ]
 
@@ -199,19 +199,14 @@ router_settings:
 # GENERAL SETTINGS
 # ============================================================
 litellm_settings:
-  num_retries: ${LITELLM_NUM_RETRIES:-2}
-  request_timeout: ${LITELLM_REQUEST_TIMEOUT:-60}
+  num_retries: 2
+  request_timeout: 60
   allowed_fails: 2
   cache: true
   cache_params:
     type: redis
-    host: redis
-    port: 6379
-    password: ${REDIS_PASSWORD}
     ttl: 3600
 
 general_settings:
-  master_key: ${LITELLM_MASTER_KEY}
-  log_level: ${LITELLM_LOG_LEVEL:-INFO}
-  #database_url: ${DATABASE_URL}
+  log_level: DEBUG
   max_parallel_requests: 100
