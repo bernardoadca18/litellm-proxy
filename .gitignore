@@ -1,0 +1,41 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Databases
+*.db
+*.db-journal
+litellm.db
+
+# Logs
+*.log
+logs/
+
+# Backups
+backups/
+*.backup
+*.sql
+*.tar.gz
+
+# Docker volumes
+volumes/
+redis-data/
+postgres-data/
+prometheus-data/
+grafana-data/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db

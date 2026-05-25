@@ -1,0 +1,73 @@
+groups:
+  - name: litellm_alerts
+    interval: 30s
+    rules:
+      # Alerta: LiteLLM está fora do ar
+      - alert: LiteLLMProxyDown
+        expr: up{job="litellm"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "LiteLLM Proxy está offline"
+          description: "O proxy LiteLLM não responde há mais de 1 minuto"
+
+      # Alerta: Alta taxa de erro nas requisições
+      - alert: HighErrorRate
+        expr: rate(litellm_requests_total{status="error"}[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Alta taxa de erro no LiteLLM"
+          description: "Mais de 10% das requisições estão falhando"
+
+      # Alerta: Rate limit próximo do limite
+      - alert: RateLimitHigh
+        expr: litellm_rate_limit_remaining < 0.2 * litellm_rate_limit_total
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Rate limit está baixo"
+          description: "Restam menos de 20% do rate limit configurado"
+
+      # Alerta: Redis está fora do ar
+      - alert: RedisDown
+        expr: up{job="redis"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Redis está offline"
+          description: "O cache Redis não está respondendo"
+
+      # Alerta: PostgreSQL está fora do ar
+      - alert: PostgresDown
+        expr: up{job="postgresql"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "PostgreSQL está offline"
+          description: "O banco de dados não está respondendo"
+
+      # Alerta: Uso de memória alto
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes > 0.9
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Uso de memória alto"
+          description: "Uso de memória está acima de 90% por 5 minutos"
+
+      # Alerta: Múltiplas chaves de API falhando
+      - alert: MultipleAPIFailures
+        expr: sum by (model) (rate(litellm_api_failures_total[10m])) > 5
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Múltiplas falhas de API"
+          description: "Mais de 5 falhas de API nos últimos 10 minutos no modelo {{ $labels.model }}"

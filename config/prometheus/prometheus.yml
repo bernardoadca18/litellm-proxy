@@ -1,0 +1,122 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'litellm-proxy'
+    environment: 'production'
+
+# Alertmanager (opcional - para enviar alertas)
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+          # - alertmanager:9093
+
+# Arquivos de regras de alerta
+rule_files:
+  - "alerts.yml"
+
+# Configurações de scraping
+scrape_configs:
+  # ============================================================
+  # LITELLM PROXY - MÉTRICAS PRINCIPAIS
+  # ============================================================
+  - job_name: 'litellm'
+    scrape_interval: 10s
+    metrics_path: '/metrics'
+    static_configs:
+      - targets:
+          - 'litellm-proxy:4001'  # Porta de métricas do LiteLLM
+        labels:
+          service: 'litellm'
+          component: 'proxy'
+
+  # ============================================================
+  # REDIS - CACHE E RATE LIMITING
+  # ============================================================
+  # - job_name: 'redis'
+  #   scrape_interval: 30s
+  #   static_configs:
+  #     - targets:
+  #         - 'redis:6379'
+  #       labels:
+  #         service: 'redis'
+  #         component: 'cache'
+  
+  - job_name: 'redis-exporter'
+    static_configs:
+      - targets:
+          - 'redis-exporter:9121'
+
+  # ============================================================
+  # POSTGRESQL - PERSISTÊNCIA
+  # ============================================================
+  # - job_name: 'postgresql'
+  #   scrape_interval: 30s
+  #   static_configs:
+  #     - targets:
+  #         - 'postgres:5433'
+  #       labels:
+  #         service: 'postgresql'
+  #         component: 'database'
+  
+  - job_name: 'postgres-exporter'
+    static_configs:
+      - targets:
+          - 'postgres-exporter:9187'
+
+  # ============================================================
+  # CADA CONTAINER INDIVIDUAL (VIA CADVISOR - OPCIONAL)
+  # ============================================================
+  - job_name: 'cadvisor'
+    scrape_interval: 15s
+    static_configs:
+      - targets:
+          - 'cadvisor:8080'
+        labels:
+          service: 'docker'
+          component: 'container'
+
+  # ============================================================
+  # NODE EXPORTER - MÉTRICAS DO HOST (CPU, MEMÓRIA, DISCO)
+  # ============================================================
+  - job_name: 'node'
+    scrape_interval: 30s
+    static_configs:
+      - targets:
+          - 'node-exporter:9100'
+        labels:
+          service: 'host'
+          component: 'system'
+
+  # ============================================================
+  # BLACKBOX - MONITORAMENTO DE ENDPOINTS EXTERNOS
+  # ============================================================
+  - job_name: 'blackbox'
+    metrics_path: /probe
+    params:
+      module: [http_2xx]
+    static_configs:
+      - targets:
+          - 'http://litellm-proxy:4000/health'  # Health check do LiteLLM
+        labels:
+          service: 'health-check'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: 'blackbox-exporter:9115'
+
+  # ============================================================
+  # PROMETHEUS AUTO-MONITORAMENTO
+  # ============================================================
+  - job_name: 'prometheus'
+    scrape_interval: 30s
+    static_configs:
+      - targets:
+          - 'localhost:9090'
+        labels:
+          service: 'prometheus'
+          component: 'monitoring'
