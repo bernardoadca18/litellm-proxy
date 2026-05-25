@@ -213,5 +213,5 @@ litellm_settings:
 general_settings:
   master_key: ${LITELLM_MASTER_KEY}
   log_level: ${LITELLM_LOG_LEVEL:-INFO}
-  database_url: ${DATABASE_URL}
+  #database_url: ${DATABASE_URL}
   max_parallel_requests: 100
