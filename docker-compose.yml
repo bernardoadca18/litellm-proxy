@@ -1,6 +1,7 @@
 networks:
   public:
     driver: bridge
+    name: litellm_public
   private:
     driver: bridge
     internal: true
