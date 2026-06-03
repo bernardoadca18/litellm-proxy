@@ -179,7 +179,7 @@ model_list:
 
 # Ollama
 
-- model_name: llama3.2-local
+  - model_name: llama3.2-local
     litellm_params:
       model: ollama/llama3.2
       api_base: "http://host.docker.internal:11434"
@@ -194,8 +194,14 @@ model_list:
       model: ollama/gemma4:e4b
       api_base: "http://host.docker.internal:11434"
 
+  - model_name: phi4-mini-local
+    litellm_params:
+      model: ollama/phi4-mini
+      api_base: "http://host.docker.internal:11434"
+      request_timeout: 120
+
 # Embedding
-- model_name: ollama-embed
+  - model_name: ollama-embed
     litellm_params:
       model: ollama/mxbai-embed-large
       api_base: "http://host.docker.internal:11434"
