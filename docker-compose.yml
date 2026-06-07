@@ -101,6 +101,7 @@ services:
       LITELLM_LOG_LEVEL: ${LITELLM_LOG_LEVEL:-INFO}
       LITELLM_PROXY_PORT: "4000"
       LITELLM_METRICS_PORT: "4001"
+      OLLAMA_API_BASE: ${OLLAMA_API_BASE}
     command:
       - "--config"
       - "/app/config.yml"
