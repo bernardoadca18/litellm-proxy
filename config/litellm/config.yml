@@ -205,6 +205,19 @@ model_list:
       model: ollama/mxbai-embed-large
       api_base: "os.environ/OLLAMA_API_BASE"
 
+  - model_name: gemma4-heretic-local
+    litellm_params:
+      model: ollama/igorls/gemma-4-12B-it-heretic-GGUF
+      api_base: "os.environ/OLLAMA_API_BASE"
+      extra_body:
+        options:
+          think: false
+
+  - model_name: qwen3.5-abliterated-local
+    litellm_params:
+      model: ollama/oroboroslabs/qwen3.5-abliterated-47-4
+      api_base: "os.environ/OLLAMA_API_BASE"
+
 
 # ============================================================
 # ROUTER SETTINGS
