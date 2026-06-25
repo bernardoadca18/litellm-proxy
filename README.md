@@ -38,27 +38,27 @@ Managing dozens of API keys across multiple providers is painful. Rate limits ge
 
 ```
                           ┌─────────────────────────────────────────────────────┐
-                          │                  Your Applications                   │
+                          │                  Your Applications                  │
                           │   (OpenAI SDK, curl, any HTTP client)               │
                           └──────────────────────┬──────────────────────────────┘
                                                  │
                                           Port 80 / 443
                                                  │
                           ┌──────────────────────▼──────────────────────────────┐
-                          │                   Nginx                              │
+                          │                   Nginx                             │
                           │    Rate limiting · SSL termination · Reverse proxy  │
                           └──────────────────────┬──────────────────────────────┘
                                                  │
                                           Port 4000
                                                  │
                           ┌──────────────────────▼──────────────────────────────┐
-                          │               LiteLLM Proxy                          │
-                          │                                                      │
-                          │  ┌──────────┐  ┌──────────┐  ┌──────────────────┐  │
-                          │  │  Router  │  │ Fallback │  │   Key Pooling    │  │
-                          │  │ (least-  │  │  Engine  │  │  (Round Robin)   │  │
-                          │  │  busy)   │  │          │  │                  │  │
-                          │  └──────────┘  └──────────┘  └──────────────────┘  │
+                          │               LiteLLM Proxy                         │
+                          │                                                     │
+                          │  ┌──────────┐  ┌──────────┐  ┌──────────────────┐   │
+                          │  │  Router  │  │ Fallback │  │   Key Pooling    │   │
+                          │  │ (least-  │  │  Engine  │  │  (Round Robin)   │   │
+                          │  │  busy)   │  │          │  │                  │   │
+                          │  └──────────┘  └──────────┘  └──────────────────┘   │
                           └──┬──────────────┬──────────────┬────────────────────┘
                              │              │              │
                ┌─────────────▼──┐   ┌──────▼──────┐  ┌───▼──────────┐
@@ -72,12 +72,12 @@ Managing dozens of API keys across multiple providers is painful. Rate limits ge
                                                     └──────────────────┘
                                                     
        ┌──────────────────────────────────────────────────────────────────┐
-       │                    Supporting Infrastructure                      │
+       │                    Supporting Infrastructure                     │
        │                                                                  │
-       │  ┌───────────┐  ┌──────────────┐  ┌──────────┐  ┌───────────┐  │
-       │  │PostgreSQL │  │    Redis     │  │Prometheus│  │  Grafana  │  │
-       │  │(pgvector) │  │(Cache+Queue) │  │(Metrics) │  │(Dashboards│  │
-       │  └───────────┘  └──────────────┘  └──────────┘  └───────────┘  │
+       │  ┌───────────┐  ┌──────────────┐  ┌──────────┐  ┌───────────┐    │
+       │  │PostgreSQL │  │    Redis     │  │Prometheus│  │  Grafana  │    │
+       │  │(pgvector) │  │(Cache+Queue) │  │(Metrics) │  │(Dashboards│    │
+       │  └───────────┘  └──────────────┘  └──────────┘  └───────────┘    │
        └──────────────────────────────────────────────────────────────────┘
 ```
 
@@ -106,7 +106,7 @@ Managing dozens of API keys across multiple providers is painful. Rate limits ge
 
 ---
 
-## 🤖 Configured Models
+## Configured Models
 
 ### Google Gemini (via Google AI Studio)
 10 API keys are pooled per model, giving you up to **10× the free-tier rate limits** per model group.
@@ -310,7 +310,7 @@ Grafana will be available at [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## 🔧 Usage
+## Usage
 
 ### With the OpenAI Python SDK
 
@@ -535,7 +535,7 @@ docker exec -i litellm-postgres psql -U litellm litellm < backups/postgres_YYYYM
 
 ---
 
-## ⚙️ Configuration Reference
+## Configuration Reference
 
 ### Environment Variables
 
