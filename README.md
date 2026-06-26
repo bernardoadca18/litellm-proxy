@@ -13,6 +13,8 @@
 [![Redis](https://img.shields.io/badge/Redis-Cache-DC382D?logo=redis&logoColor=white)](https://redis.io/)
 [![Ollama](https://img.shields.io/badge/Ollama-Local%20Models-black?logo=ollama)](https://ollama.com/)
 
+[Ler em Português](README.pt-br.md)
+
 </div>
 
 ---
