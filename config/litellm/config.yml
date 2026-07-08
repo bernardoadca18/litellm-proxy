@@ -2796,7 +2796,7 @@ model_list:
 
   - model_name: qwen-local
     litellm_params:
-      model: ollama/qwen-ajustado:latest
+      model: ollama/qwen-instruct-ajustado:latest
       api_base: "os.environ/OLLAMA_API_BASE"
       timeout: 120
     model_info:
