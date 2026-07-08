@@ -2825,6 +2825,11 @@ model_list:
     model_info:
       mode: embedding
 
+  - model_name: all-minilm-embed
+    litellm_params:
+      model: ollama/all-minilm:l12-v2
+      api_base: http://host.docker.internal:11434
+
   - model_name: gemma4-heretic-local
     litellm_params:
       model: ollama/igorls/gemma-4-12B-it-heretic-GGUF
