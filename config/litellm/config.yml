@@ -2856,32 +2856,34 @@ router_settings:
   
   # Fallbacks hierárquicos
   fallbacks: [
-    # Gemini 3.5 Flash -> outros Gemini -> Groq -> OpenRouter
-    {"gemini-3.5-flash": [
-      "gemini-3.1-flash-lite",
-      "gemini-2.5-flash",
-      "gemini-2.0-flash",
+    # Gemini 3.6 Flash -> outros Gemini -> Groq -> OpenRouter
+    {"gemini-3.6-flash": [
+      "gemini-3.5-flash-lite",
       "groq-llama4-scout",
       "groq-llama3.3-70b",
       "openrouter-nemotron-ultra",
-      "openrouter-gpt-oss-120b"
+      "openrouter-gpt-oss-120b",
+      "qwen=local",
+      "phi4-mini-local"
     ]},
     
     # Gemini 3.1 Pro -> Gemini 3.5 Flash -> Groq
     {"gemini-3.1-pro": [
-      "gemini-3.5-flash",
-      "gemini-2.5-pro",
+      "gemini-3.6-flash",
+      "gemini-3.5-flash-lite",
       "groq-llama4-scout",
       "groq-gpt-oss-120b",
-      "openrouter-nemotron-super"
+      "openrouter-nemotron-super",
+      "qwen=local",
+      "phi4-mini-local"
     ]},
     
     # Gemini 3.1 Flash-Lite -> Gemini 2.5 Flash-Lite -> Groq
-    {"gemini-3.1-flash-lite": [
-      "gemini-2.5-flash-lite",
-      "gemini-2.0-flash-lite",
+    {"gemini-3.5-flash-lite": [
       "groq-llama3.1-8b",
-      "openrouter-gemma4-26b"
+      "openrouter-gemma4-26b",
+      "qwen=local",
+      "phi4-mini-local"
     ]},
     
     # Gemini 2.5 Pro -> Gemini 3.1 Pro -> Groq
