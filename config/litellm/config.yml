@@ -4,7 +4,7 @@ model_list:
   # ============================================================
   
   # ---- GEMINI 3.5 FLASH ----
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_1"
@@ -15,7 +15,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_2"
@@ -50,7 +50,7 @@ model_list:
       supports_function_calling: true
 
   # ---- GEMINI 3.1 FLASH-LITE ----
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_1"
@@ -61,7 +61,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_2"
@@ -192,7 +192,7 @@ model_list:
   # ============================================================
   
   # ---- GEMINI 3.5 FLASH ----
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_3"
@@ -203,7 +203,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_4"
@@ -238,7 +238,7 @@ model_list:
       supports_function_calling: true
 
   # ---- GEMINI 3.1 FLASH-LITE ----
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_3"
@@ -249,7 +249,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_4"
@@ -380,7 +380,7 @@ model_list:
   # ============================================================
   
   # ---- GEMINI 3.5 FLASH ----
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_5"
@@ -391,7 +391,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_6"
@@ -426,7 +426,7 @@ model_list:
       supports_function_calling: true
 
   # ---- GEMINI 3.1 FLASH-LITE ----
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_5"
@@ -437,7 +437,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_6"
@@ -568,7 +568,7 @@ model_list:
   # ============================================================
   
   # ---- GEMINI 3.5 FLASH ----
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_7"
@@ -579,7 +579,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_8"
@@ -614,7 +614,7 @@ model_list:
       supports_function_calling: true
 
   # ---- GEMINI 3.1 FLASH-LITE ----
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_7"
@@ -625,7 +625,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_8"
@@ -756,7 +756,7 @@ model_list:
   # ============================================================
   
   # ---- GEMINI 3.5 FLASH ----
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_9"
@@ -767,7 +767,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.5-flash
+  - model_name: gemini-3.6-flash
     litellm_params:
       model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_10"
@@ -802,7 +802,7 @@ model_list:
       supports_function_calling: true
 
   # ---- GEMINI 3.1 FLASH-LITE ----
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_9"
@@ -813,7 +813,7 @@ model_list:
       mode: chat
       supports_function_calling: true
   
-  - model_name: gemini-3.1-flash-lite
+  - model_name: gemini-3.5-flash-lite
     litellm_params:
       model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_10"
