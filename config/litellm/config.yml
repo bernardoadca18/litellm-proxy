@@ -6,7 +6,7 @@ model_list:
   # ---- GEMINI 3.5 FLASH ----
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_1"
       rpm: 15
       tpm: 3000000
@@ -17,7 +17,7 @@ model_list:
   
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_2"
       rpm: 15
       tpm: 3000000
@@ -52,7 +52,7 @@ model_list:
   # ---- GEMINI 3.1 FLASH-LITE ----
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_1"
       rpm: 15
       tpm: 10000000
@@ -63,7 +63,7 @@ model_list:
   
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_2"
       rpm: 15
       tpm: 10000000
@@ -194,7 +194,7 @@ model_list:
   # ---- GEMINI 3.5 FLASH ----
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_3"
       rpm: 15
       tpm: 3000000
@@ -205,7 +205,7 @@ model_list:
   
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_4"
       rpm: 15
       tpm: 3000000
@@ -240,7 +240,7 @@ model_list:
   # ---- GEMINI 3.1 FLASH-LITE ----
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_3"
       rpm: 15
       tpm: 10000000
@@ -251,7 +251,7 @@ model_list:
   
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_4"
       rpm: 15
       tpm: 10000000
@@ -382,7 +382,7 @@ model_list:
   # ---- GEMINI 3.5 FLASH ----
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_5"
       rpm: 15
       tpm: 3000000
@@ -393,7 +393,7 @@ model_list:
   
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_6"
       rpm: 15
       tpm: 3000000
@@ -428,7 +428,7 @@ model_list:
   # ---- GEMINI 3.1 FLASH-LITE ----
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_5"
       rpm: 15
       tpm: 10000000
@@ -439,7 +439,7 @@ model_list:
   
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_6"
       rpm: 15
       tpm: 10000000
@@ -570,7 +570,7 @@ model_list:
   # ---- GEMINI 3.5 FLASH ----
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_7"
       rpm: 15
       tpm: 3000000
@@ -581,7 +581,7 @@ model_list:
   
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_8"
       rpm: 15
       tpm: 3000000
@@ -616,7 +616,7 @@ model_list:
   # ---- GEMINI 3.1 FLASH-LITE ----
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_7"
       rpm: 15
       tpm: 10000000
@@ -627,7 +627,7 @@ model_list:
   
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_8"
       rpm: 15
       tpm: 10000000
@@ -758,7 +758,7 @@ model_list:
   # ---- GEMINI 3.5 FLASH ----
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_9"
       rpm: 15
       tpm: 3000000
@@ -769,7 +769,7 @@ model_list:
   
   - model_name: gemini-3.5-flash
     litellm_params:
-      model: gemini/gemini-3.5-flash
+      model: gemini/gemini-3.6-flash
       api_key: "os.environ/GEMINI_API_KEY_10"
       rpm: 15
       tpm: 3000000
@@ -804,7 +804,7 @@ model_list:
   # ---- GEMINI 3.1 FLASH-LITE ----
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_9"
       rpm: 15
       tpm: 10000000
@@ -815,7 +815,7 @@ model_list:
   
   - model_name: gemini-3.1-flash-lite
     litellm_params:
-      model: gemini/gemini-3.1-flash-lite
+      model: gemini/gemini-3.5-flash-lite
       api_key: "os.environ/GEMINI_API_KEY_10"
       rpm: 15
       tpm: 10000000
