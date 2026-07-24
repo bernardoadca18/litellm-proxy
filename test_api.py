@@ -26,7 +26,7 @@ try:
 
     response = client.chat.completions.create(
 
-        model="gemini-flash",
+        model="gemini-3.5-flash-lite",
 
         messages=[
 
