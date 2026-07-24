@@ -2863,7 +2863,7 @@ router_settings:
       "groq-llama3.3-70b",
       "openrouter-nemotron-ultra",
       "openrouter-gpt-oss-120b",
-      "qwen=local",
+      "qwen-local",
       "phi4-mini-local"
     ]},
     
@@ -2874,7 +2874,7 @@ router_settings:
       "groq-llama4-scout",
       "groq-gpt-oss-120b",
       "openrouter-nemotron-super",
-      "qwen=local",
+      "qwen-local",
       "phi4-mini-local"
     ]},
     
@@ -2882,7 +2882,7 @@ router_settings:
     {"gemini-3.5-flash-lite": [
       "groq-llama3.1-8b",
       "openrouter-gemma4-26b",
-      "qwen=local",
+      "qwen-local",
       "phi4-mini-local"
     ]},
     
