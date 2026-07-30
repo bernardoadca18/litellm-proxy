@@ -2804,7 +2804,7 @@ model_list:
   
   - model_name: bonsai-local-27B-Q1-reasoning
     litellm_params:
-      model: MobiusDevelopment/Bonsai-27B-Q1_0-gguf:latest
+      model: ollama/MobiusDevelopment/Bonsai-27B-Q1_0-gguf:latest
       api_base: "os.environ/OLLAMA_API_BASE"
       timeout: 120
     model_info:
