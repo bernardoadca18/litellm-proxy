@@ -2690,12 +2690,7 @@ model_list:
       api_base: "os.environ/OLLAMA_API_BASE"
       timeout: 120
     model_info:
-      id: "ollama/qwen-instruct-ajustado:latest"
       mode: chat
-      max_tokens: 8192
-      max_input_tokens: 131072
-      input_cost_per_token: 0.0
-      output_cost_per_token: 0.0
   
   - model_name: bonsai-local-27B-Q1-reasoning
     litellm_params:
@@ -2703,12 +2698,7 @@ model_list:
       api_base: "os.environ/OLLAMA_API_BASE"
       timeout: 120
     model_info:
-      id: "ollama/MobiusDevelopment/Bonsai-27B-Q1_0-gguf:latest"
       mode: chat
-      max_tokens: 8192
-      max_input_tokens: 131072
-      input_cost_per_token: 0.0
-      output_cost_per_token: 0.0
 
   - model_name: gemma-local
     litellm_params:
@@ -2716,12 +2706,7 @@ model_list:
       api_base: "os.environ/OLLAMA_API_BASE"
       timeout: 120
     model_info:
-      id: "ollama/gemma4:e4b"
       mode: chat
-      max_tokens: 8192
-      max_input_tokens: 131072
-      input_cost_per_token: 0.0
-      output_cost_per_token: 0.0
 
   - model_name: phi4-mini-local
     litellm_params:
@@ -2729,12 +2714,7 @@ model_list:
       api_base: "os.environ/OLLAMA_API_BASE"
       timeout: 120
     model_info:
-      id: "ollama/phi4-mini"
       mode: chat
-      max_tokens: 8192
-      max_input_tokens: 131072
-      input_cost_per_token: 0.0
-      output_cost_per_token: 0.0
 
   - model_name: ollama-embed
     litellm_params:
@@ -2752,36 +2732,21 @@ model_list:
         options:
           think: false
     model_info:
-      id: "ollama/igorls/gemma-4-12B-it-heretic-GGUF"
       mode: chat
-      max_tokens: 8192
-      max_input_tokens: 131072
-      input_cost_per_token: 0.0
-      output_cost_per_token: 0.0
 
   - model_name: qwen3.5-abliterated-local
     litellm_params:
       model: ollama_chat/huihui_ai/qwen3.5-abliterated:9b
       api_base: "os.environ/OLLAMA_API_BASE"
     model_info:
-      id: "ollama/huihui_ai/qwen3.5-abliterated:9b"
       mode: chat
-      max_tokens: 8192
-      max_input_tokens: 131072
-      input_cost_per_token: 0.0
-      output_cost_per_token: 0.0
 
   - model_name: Llama3.2-Instruct-Abliterated-Local
     litellm_params:
       model: ollama_chat/feadxus/Llama3.2-24B-A3B-II-Dark-Champion-INSTRUCT-Heretic-Abliterated-Uncensored:Q4_K_S
       api_base: "os.environ/OLLAMA_API_BASE"
     model_info:
-      id: "ollama/feadxus/Llama3.2-24B-A3B-II-Dark-Champion-INSTRUCT-Heretic-Abliterated-Uncensored:Q4_K_S"
       mode: chat
-      max_tokens: 8192
-      max_input_tokens: 131072
-      input_cost_per_token: 0.0
-      output_cost_per_token: 0.0
 
 # ============================================================
 # ROUTER SETTINGS - ESTRATÉGIA DE FALLBACK
