@@ -2441,6 +2441,97 @@ model_list:
     model_info:
       mode: chat
       supports_function_calling: true
+
+# ============================================================
+# OLLAMA - Modelos Locais
+# ============================================================
+  - model_name: llama3.2-local
+    litellm_params:
+      model: ollama/llama3.2
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+    model_info:
+      id: "ollama/llama3.2"
+      mode: chat
+      max_tokens: 8192
+      max_input_tokens: 131072
+      input_cost_per_token: 0.0
+      output_cost_per_token: 0.0
+
+  - model_name: qwen-local
+    litellm_params:
+      model: ollama/qwen-instruct-ajustado:latest
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+    model_info:
+      mode: chat
+
+  - model_name: bonsai-local-27B-Q1-reasoning
+    litellm_params:
+      model: ollama_chat/MobiusDevelopment/Bonsai-27B-Q1_0-gguf:latest
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+    model_info:
+      mode: chat
+
+  - model_name: gemma-local
+    litellm_params:
+      model: ollama/gemma4:e4b
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+    model_info:
+      mode: chat
+
+  - model_name: phi4-mini-local
+    litellm_params:
+      model: ollama/phi4-mini
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+    model_info:
+      mode: chat
+
+  - model_name: ollama-embed
+    litellm_params:
+      model: ollama/mxbai-embed-large
+      api_base: "os.environ/OLLAMA_API_BASE"
+    model_info:
+      id: "ollama/mxbai-embed-large"
+      mode: embedding
+
+  - model_name: gemma4-heretic-local
+    litellm_params:
+      model: ollama_chat/igorls/gemma-4-12B-it-heretic-GGUF
+      api_base: "os.environ/OLLAMA_API_BASE"
+      extra_body:
+        options:
+          think: false
+    model_info:
+      mode: chat
+
+  - model_name: qwen3.5-abliterated-local
+    litellm_params:
+      model: ollama_chat/huihui_ai/qwen3.5-abliterated:9b
+      api_base: "os.environ/OLLAMA_API_BASE"
+    model_info:
+      mode: chat
+
+  - model_name: Llama3.2-Instruct-Abliterated-Local
+    litellm_params:
+      model: ollama_chat/feadxus/Llama3.2-24B-A3B-II-Dark-Champion-INSTRUCT-Heretic-Abliterated-Uncensored:Q4_K_S
+      api_base: "os.environ/OLLAMA_API_BASE"
+    model_info:
+      mode: chat
+
+  - model_name: groq-qwen3.6-27b
+    litellm_params:
+      model: groq/qwen/qwen3.6-27b
+      api_key: "os.environ/GROQ_API_KEY_4"
+      rpm: 30
+      tpm: 8000
+      timeout: 60
+    model_info:
+      mode: chat
+      supports_function_calling: true
   
 
 # ============================================================
