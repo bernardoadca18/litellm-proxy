@@ -1,2599 +1,2055 @@
 model_list:
-  # ============================================================
-  # GEMINI - Versões 3.1+ com 11 chaves cada
-  # ============================================================
-
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_1"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_2"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_3"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_4"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_5"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_6"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_7"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_8"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_9"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_10"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.6-flash
-    litellm_params:
-      model: gemini/gemini-3.6-flash
-      api_key: "os.environ/GEMINI_API_KEY_11"
-      rpm: 15
-      tpm: 3000000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_1"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_2"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_3"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_4"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_5"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_6"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_7"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_8"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_9"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_10"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.1-pro
-    litellm_params:
-      model: gemini/gemini-3.1-pro-preview
-      api_key: "os.environ/GEMINI_API_KEY_11"
-      rpm: 5
-      tpm: 5000000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_1"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_2"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_3"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_4"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_5"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_6"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_7"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_8"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_9"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_10"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: gemini-3.5-flash-lite
-    litellm_params:
-      model: gemini/gemini-3.5-flash-lite
-      api_key: "os.environ/GEMINI_API_KEY_11"
-      rpm: 15
-      tpm: 10000000
-      timeout: 45
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  # ============================================================
-  # OPENROUTER - 11 chaves para cada modelo
-  # ============================================================
-
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-embed-vl
-    litellm_params:
-      model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-26b
-    litellm_params:
-      model: openrouter/google/gemma-4-26b-a4b
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gemma4-31b
-    litellm_params:
-      model: openrouter/google/gemma-4-31b
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-120b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-120b
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-gpt-oss-20b
-    litellm_params:
-      model: openrouter/openai/gpt-oss-20b
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-m1
-    litellm_params:
-      model: openrouter/poolside/laguna-m.1
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-laguna-xs2
-    litellm_params:
-      model: openrouter/poolside/laguna-xs.2
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-12b-vl
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-12b-2-vl
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-30b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-30b-a3b
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-nano-9b
-    litellm_params:
-      model: openrouter/nvidia/nemotron-nano-9b-v2
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-omni
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-nano-omni
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-super
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-super
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-nemotron-ultra
-    litellm_params:
-      model: openrouter/nvidia/nemotron-3-ultra
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-north-mini-code
-    litellm_params:
-      model: openrouter/cohere/north-mini-code
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-owl-alpha
-    litellm_params:
-      model: openrouter/openrouter/owl-alpha
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 20
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_1"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_2"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_3"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_4"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_5"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_6"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_7"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_8"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_9"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_10"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: openrouter-seedream-4.5
-    litellm_params:
-      model: openrouter/bytedance-seed/seedream-4.5
-      api_key: "os.environ/OPENROUTER_API_KEY_11"
-      rpm: 10
-      timeout: 120
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  # ============================================================
-  # GROQ - 4 chaves para cada modelo
-  # ============================================================
-
-  - model_name: groq-gpt-oss-120b
-    litellm_params:
-      model: groq/openai/gpt-oss-120b
-      api_key: "os.environ/GROQ_API_KEY_1"
-      rpm: 30
-      tpm: 8000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-gpt-oss-120b
-    litellm_params:
-      model: groq/openai/gpt-oss-120b
-      api_key: "os.environ/GROQ_API_KEY_2"
-      rpm: 30
-      tpm: 8000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-gpt-oss-120b
-    litellm_params:
-      model: groq/openai/gpt-oss-120b
-      api_key: "os.environ/GROQ_API_KEY_3"
-      rpm: 30
-      tpm: 8000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-gpt-oss-120b
-    litellm_params:
-      model: groq/openai/gpt-oss-120b
-      api_key: "os.environ/GROQ_API_KEY_4"
-      rpm: 30
-      tpm: 8000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-gpt-oss-20b
-    litellm_params:
-      model: groq/openai/gpt-oss-20b
-      api_key: "os.environ/GROQ_API_KEY_1"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-gpt-oss-20b
-    litellm_params:
-      model: groq/openai/gpt-oss-20b
-      api_key: "os.environ/GROQ_API_KEY_2"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-gpt-oss-20b
-    litellm_params:
-      model: groq/openai/gpt-oss-20b
-      api_key: "os.environ/GROQ_API_KEY_3"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-gpt-oss-20b
-    litellm_params:
-      model: groq/openai/gpt-oss-20b
-      api_key: "os.environ/GROQ_API_KEY_4"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama3.1-8b
-    litellm_params:
-      model: groq/llama-3.1-8b-instant
-      api_key: "os.environ/GROQ_API_KEY_1"
-      rpm: 30
-      tpm: 6000
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama3.1-8b
-    litellm_params:
-      model: groq/llama-3.1-8b-instant
-      api_key: "os.environ/GROQ_API_KEY_2"
-      rpm: 30
-      tpm: 6000
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama3.1-8b
-    litellm_params:
-      model: groq/llama-3.1-8b-instant
-      api_key: "os.environ/GROQ_API_KEY_3"
-      rpm: 30
-      tpm: 6000
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama3.1-8b
-    litellm_params:
-      model: groq/llama-3.1-8b-instant
-      api_key: "os.environ/GROQ_API_KEY_4"
-      rpm: 30
-      tpm: 6000
-      timeout: 30
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama3.3-70b
-    litellm_params:
-      model: groq/llama-3.3-70b-versatile
-      api_key: "os.environ/GROQ_API_KEY_1"
-      rpm: 30
-      tpm: 12000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama3.3-70b
-    litellm_params:
-      model: groq/llama-3.3-70b-versatile
-      api_key: "os.environ/GROQ_API_KEY_2"
-      rpm: 30
-      tpm: 12000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama3.3-70b
-    litellm_params:
-      model: groq/llama-3.3-70b-versatile
-      api_key: "os.environ/GROQ_API_KEY_3"
-      rpm: 30
-      tpm: 12000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama3.3-70b
-    litellm_params:
-      model: groq/llama-3.3-70b-versatile
-      api_key: "os.environ/GROQ_API_KEY_4"
-      rpm: 30
-      tpm: 12000
-      timeout: 90
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama4-scout
-    litellm_params:
-      model: groq/meta-llama/llama-4-scout-17b-16e-instruct
-      api_key: "os.environ/GROQ_API_KEY_1"
-      rpm: 30
-      tpm: 30000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama4-scout
-    litellm_params:
-      model: groq/meta-llama/llama-4-scout-17b-16e-instruct
-      api_key: "os.environ/GROQ_API_KEY_2"
-      rpm: 30
-      tpm: 30000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama4-scout
-    litellm_params:
-      model: groq/meta-llama/llama-4-scout-17b-16e-instruct
-      api_key: "os.environ/GROQ_API_KEY_3"
-      rpm: 30
-      tpm: 30000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-llama4-scout
-    litellm_params:
-      model: groq/meta-llama/llama-4-scout-17b-16e-instruct
-      api_key: "os.environ/GROQ_API_KEY_4"
-      rpm: 30
-      tpm: 30000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-qwen3-32b
-    litellm_params:
-      model: groq/qwen/qwen3-32b
-      api_key: "os.environ/GROQ_API_KEY_1"
-      rpm: 30
-      tpm: 6000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-qwen3-32b
-    litellm_params:
-      model: groq/qwen/qwen3-32b
-      api_key: "os.environ/GROQ_API_KEY_2"
-      rpm: 30
-      tpm: 6000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-qwen3-32b
-    litellm_params:
-      model: groq/qwen/qwen3-32b
-      api_key: "os.environ/GROQ_API_KEY_3"
-      rpm: 30
-      tpm: 6000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-qwen3-32b
-    litellm_params:
-      model: groq/qwen/qwen3-32b
-      api_key: "os.environ/GROQ_API_KEY_4"
-      rpm: 30
-      tpm: 6000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-qwen3.6-27b
-    litellm_params:
-      model: groq/qwen/qwen3.6-27b
-      api_key: "os.environ/GROQ_API_KEY_1"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-qwen3.6-27b
-    litellm_params:
-      model: groq/qwen/qwen3.6-27b
-      api_key: "os.environ/GROQ_API_KEY_2"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-qwen3.6-27b
-    litellm_params:
-      model: groq/qwen/qwen3.6-27b
-      api_key: "os.environ/GROQ_API_KEY_3"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-  - model_name: groq-qwen3.6-27b
-    litellm_params:
-      model: groq/qwen/qwen3.6-27b
-      api_key: "os.environ/GROQ_API_KEY_4"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-
-# ============================================================
-# OLLAMA - Modelos Locais
-# ============================================================
-  - model_name: llama3.2-local
-    litellm_params:
-      model: ollama/llama3.2
-      api_base: "os.environ/OLLAMA_API_BASE"
-      timeout: 120
-    model_info:
-      id: "ollama/llama3.2"
-      mode: chat
-      max_tokens: 8192
-      max_input_tokens: 131072
-      input_cost_per_token: 0.0
-      output_cost_per_token: 0.0
-
-  - model_name: qwen-local
-    litellm_params:
-      model: ollama/qwen3.5:9b
-      api_base: "os.environ/OLLAMA_API_BASE"
-      timeout: 120
-    model_info:
-      mode: chat
-
-  - model_name: gemma-local
-    litellm_params:
-      model: ollama/gemma4:e4b
-      api_base: "os.environ/OLLAMA_API_BASE"
-      timeout: 120
-    model_info:
-      mode: chat
-
-  - model_name: phi4-mini-local
-    litellm_params:
-      model: ollama/phi4-mini
-      api_base: "os.environ/OLLAMA_API_BASE"
-      timeout: 120
-    model_info:
-      mode: chat
-
-  - model_name: ollama-embed
-    litellm_params:
-      model: ollama/mxbai-embed-large
-      api_base: "os.environ/OLLAMA_API_BASE"
-    model_info:
-      id: "ollama/mxbai-embed-large"
-      mode: embedding
-
-  - model_name: qwen3.5-abliterated-local
-    litellm_params:
-      model: ollama_chat/huihui_ai/qwen3.5-abliterated:9b
-      api_base: "os.environ/OLLAMA_API_BASE"
-    model_info:
-      mode: chat
-
-# ============================================================
-# ROUTER SETTINGS - ESTRATÉGIA DE ROTEAMENTO
-# ============================================================
-# simple-shuffle: distribuição uniforme entre deployments saudáveis
-# Cooldown automático para deployments com falhas
-# Fallback para próxima credencial disponível no mesmo model group
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_1
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_2
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_3
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_4
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_5
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_6
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_7
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_8
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_9
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_10
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.6-flash
+  litellm_params:
+    model: gemini/gemini-3.6-flash
+    api_key: os.environ/GEMINI_API_KEY_11
+    rpm: 15
+    tpm: 3000000
+    timeout: 60
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_1
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_2
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_3
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_4
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_5
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_6
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_7
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_8
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_9
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_10
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.1-pro
+  litellm_params:
+    model: gemini/gemini-3.1-pro-preview
+    api_key: os.environ/GEMINI_API_KEY_11
+    rpm: 5
+    tpm: 5000000
+    timeout: 90
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_1
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_2
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_3
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_4
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_5
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_6
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_7
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_8
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_9
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_10
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: gemini-3.5-flash-lite
+  litellm_params:
+    model: gemini/gemini-3.5-flash-lite
+    api_key: os.environ/GEMINI_API_KEY_11
+    rpm: 15
+    tpm: 10000000
+    timeout: 45
+  model_info:
+    mode: chat
+    supports_function_calling: true
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-embed-vl
+  litellm_params:
+    model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 30
+  model_info:
+    mode: embedding
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-26b
+  litellm_params:
+    model: openrouter/google/gemma-4-26b-a4b
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gemma4-31b
+  litellm_params:
+    model: openrouter/google/gemma-4-31b
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-120b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-120b
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-gpt-oss-20b
+  litellm_params:
+    model: openrouter/openai/gpt-oss-20b
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-m1
+  litellm_params:
+    model: openrouter/poolside/laguna-m.1
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-laguna-xs2
+  litellm_params:
+    model: openrouter/poolside/laguna-xs.2
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-12b-vl
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-12b-2-vl
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-30b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-nano-9b
+  litellm_params:
+    model: openrouter/nvidia/nemotron-nano-9b-v2
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-omni
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-nano-omni
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-super
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-super
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-nemotron-ultra
+  litellm_params:
+    model: openrouter/nvidia/nemotron-3-ultra
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-north-mini-code
+  litellm_params:
+    model: openrouter/cohere/north-mini-code
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-owl-alpha
+  litellm_params:
+    model: openrouter/openrouter/owl-alpha
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 20
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_1
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_2
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_3
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_4
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_5
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_6
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_7
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_8
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_9
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_10
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: openrouter-seedream-4.5
+  litellm_params:
+    model: openrouter/bytedance-seed/seedream-4.5
+    api_key: os.environ/OPENROUTER_API_KEY_11
+    rpm: 10
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: groq-gpt-oss-120b
+  litellm_params:
+    model: groq/openai/gpt-oss-120b
+    api_key: os.environ/GROQ_API_KEY_1
+    rpm: 30
+    tpm: 8000
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: groq-gpt-oss-120b
+  litellm_params:
+    model: groq/openai/gpt-oss-120b
+    api_key: os.environ/GROQ_API_KEY_2
+    rpm: 30
+    tpm: 8000
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: groq-gpt-oss-120b
+  litellm_params:
+    model: groq/openai/gpt-oss-120b
+    api_key: os.environ/GROQ_API_KEY_3
+    rpm: 30
+    tpm: 8000
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: groq-gpt-oss-120b
+  litellm_params:
+    model: groq/openai/gpt-oss-120b
+    api_key: os.environ/GROQ_API_KEY_4
+    rpm: 30
+    tpm: 8000
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: groq-gpt-oss-20b
+  litellm_params:
+    model: groq/openai/gpt-oss-20b
+    api_key: os.environ/GROQ_API_KEY_1
+    rpm: 30
+    tpm: 8000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-gpt-oss-20b
+  litellm_params:
+    model: groq/openai/gpt-oss-20b
+    api_key: os.environ/GROQ_API_KEY_2
+    rpm: 30
+    tpm: 8000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-gpt-oss-20b
+  litellm_params:
+    model: groq/openai/gpt-oss-20b
+    api_key: os.environ/GROQ_API_KEY_3
+    rpm: 30
+    tpm: 8000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-gpt-oss-20b
+  litellm_params:
+    model: groq/openai/gpt-oss-20b
+    api_key: os.environ/GROQ_API_KEY_4
+    rpm: 30
+    tpm: 8000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-llama3.1-8b
+  litellm_params:
+    model: groq/llama-3.1-8b-instant
+    api_key: os.environ/GROQ_API_KEY_1
+    rpm: 30
+    tpm: 6000
+    timeout: 30
+  model_info:
+    mode: chat
+- model_name: groq-llama3.1-8b
+  litellm_params:
+    model: groq/llama-3.1-8b-instant
+    api_key: os.environ/GROQ_API_KEY_2
+    rpm: 30
+    tpm: 6000
+    timeout: 30
+  model_info:
+    mode: chat
+- model_name: groq-llama3.1-8b
+  litellm_params:
+    model: groq/llama-3.1-8b-instant
+    api_key: os.environ/GROQ_API_KEY_3
+    rpm: 30
+    tpm: 6000
+    timeout: 30
+  model_info:
+    mode: chat
+- model_name: groq-llama3.1-8b
+  litellm_params:
+    model: groq/llama-3.1-8b-instant
+    api_key: os.environ/GROQ_API_KEY_4
+    rpm: 30
+    tpm: 6000
+    timeout: 30
+  model_info:
+    mode: chat
+- model_name: groq-llama3.3-70b
+  litellm_params:
+    model: groq/llama-3.3-70b-versatile
+    api_key: os.environ/GROQ_API_KEY_1
+    rpm: 30
+    tpm: 12000
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: groq-llama3.3-70b
+  litellm_params:
+    model: groq/llama-3.3-70b-versatile
+    api_key: os.environ/GROQ_API_KEY_2
+    rpm: 30
+    tpm: 12000
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: groq-llama3.3-70b
+  litellm_params:
+    model: groq/llama-3.3-70b-versatile
+    api_key: os.environ/GROQ_API_KEY_3
+    rpm: 30
+    tpm: 12000
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: groq-llama3.3-70b
+  litellm_params:
+    model: groq/llama-3.3-70b-versatile
+    api_key: os.environ/GROQ_API_KEY_4
+    rpm: 30
+    tpm: 12000
+    timeout: 90
+  model_info:
+    mode: chat
+- model_name: groq-llama4-scout
+  litellm_params:
+    model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+    api_key: os.environ/GROQ_API_KEY_1
+    rpm: 30
+    tpm: 30000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-llama4-scout
+  litellm_params:
+    model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+    api_key: os.environ/GROQ_API_KEY_2
+    rpm: 30
+    tpm: 30000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-llama4-scout
+  litellm_params:
+    model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+    api_key: os.environ/GROQ_API_KEY_3
+    rpm: 30
+    tpm: 30000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-llama4-scout
+  litellm_params:
+    model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+    api_key: os.environ/GROQ_API_KEY_4
+    rpm: 30
+    tpm: 30000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-qwen3-32b
+  litellm_params:
+    model: groq/qwen/qwen3-32b
+    api_key: os.environ/GROQ_API_KEY_1
+    rpm: 30
+    tpm: 6000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-qwen3-32b
+  litellm_params:
+    model: groq/qwen/qwen3-32b
+    api_key: os.environ/GROQ_API_KEY_2
+    rpm: 30
+    tpm: 6000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-qwen3-32b
+  litellm_params:
+    model: groq/qwen/qwen3-32b
+    api_key: os.environ/GROQ_API_KEY_3
+    rpm: 30
+    tpm: 6000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-qwen3-32b
+  litellm_params:
+    model: groq/qwen/qwen3-32b
+    api_key: os.environ/GROQ_API_KEY_4
+    rpm: 30
+    tpm: 6000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-qwen3.6-27b
+  litellm_params:
+    model: groq/qwen/qwen3.6-27b
+    api_key: os.environ/GROQ_API_KEY_1
+    rpm: 30
+    tpm: 8000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-qwen3.6-27b
+  litellm_params:
+    model: groq/qwen/qwen3.6-27b
+    api_key: os.environ/GROQ_API_KEY_2
+    rpm: 30
+    tpm: 8000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-qwen3.6-27b
+  litellm_params:
+    model: groq/qwen/qwen3.6-27b
+    api_key: os.environ/GROQ_API_KEY_3
+    rpm: 30
+    tpm: 8000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: groq-qwen3.6-27b
+  litellm_params:
+    model: groq/qwen/qwen3.6-27b
+    api_key: os.environ/GROQ_API_KEY_4
+    rpm: 30
+    tpm: 8000
+    timeout: 60
+  model_info:
+    mode: chat
+- model_name: llama3.2-local
+  litellm_params:
+    model: ollama/llama3.2
+    api_base: os.environ/OLLAMA_API_BASE
+    timeout: 120
+  model_info:
+    id: ollama/llama3.2
+    max_tokens: 8192
+    max_input_tokens: 131072
+    input_cost_per_token: 0.0
+    output_cost_per_token: 0.0
+    mode: chat
+- model_name: qwen-local
+  litellm_params:
+    model: ollama/qwen3.5:9b
+    api_base: os.environ/OLLAMA_API_BASE
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: gemma-local
+  litellm_params:
+    model: ollama/gemma4:e4b
+    api_base: os.environ/OLLAMA_API_BASE
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: phi4-mini-local
+  litellm_params:
+    model: ollama/phi4-mini
+    api_base: os.environ/OLLAMA_API_BASE
+    timeout: 120
+  model_info:
+    mode: chat
+- model_name: ollama-embed
+  litellm_params:
+    model: ollama/mxbai-embed-large
+    api_base: os.environ/OLLAMA_API_BASE
+  model_info:
+    mode: embedding
+- model_name: qwen3.5-abliterated-local
+  litellm_params:
+    model: ollama_chat/huihui_ai/qwen3.5-abliterated:9b
+    api_base: os.environ/OLLAMA_API_BASE
+  model_info:
+    mode: chat
 router_settings:
-  routing_strategy: "simple-shuffle"
+  routing_strategy: simple-shuffle
   num_retries: 2
   request_timeout: 90
   cooldown_time: 60
   allowed_fails: 2
   retry_after: 5
   enable_loadbalancing: true
-  
-  # Fallbacks hierárquicos
-  #fallbacks: [
-  #  # Gemini 3.6 Flash -> outros Gemini -> Groq -> OpenRouter
-  #  {"gemini-3.6-flash": [
-  #    "gemini-3.5-flash-lite",
-  #    "groq-llama4-scout",
-  #    "groq-llama3.3-70b",
-  #    "openrouter-nemotron-ultra",
-  #    "openrouter-gpt-oss-120b",
-  #    "qwen-local",
-  #    "phi4-mini-local"
-  #  ]},
-  #  
-  #  # Gemini 3.1 Pro -> Gemini 3.5 Flash -> Groq
-  #  {"gemini-3.1-pro": [
-  #    "gemini-3.6-flash",
-  #    "gemini-3.5-flash-lite",
-  #    "groq-llama4-scout",
-  #    "groq-gpt-oss-120b",
-  #    "openrouter-nemotron-super",
-  #    "qwen-local",
-  #    "phi4-mini-local"
-  #  ]},
-  #  
-  #  # Gemini 3.1 Flash-Lite -> Gemini 2.5 Flash-Lite -> Groq
-  #  {"gemini-3.5-flash-lite": [
-  #    "groq-llama3.1-8b",
-  #    "openrouter-gemma4-26b",
-  #    "qwen-local",
-  #    "phi4-mini-local"
-  #  ]},
-  #  
-  #  # Fallback GROQ -> OpenRouter
-  #  {"groq-llama4-scout": [
-  #    "groq-llama3.3-70b",
-  #    "groq-gpt-oss-120b",
-  #    "openrouter-nemotron-ultra"
-  #  ]},
-  #  
-  #  {"groq-llama3.3-70b": [
-  #    "groq-qwen3-32b",
-  #    "openrouter-gpt-oss-120b"
-  #  ]},
-  #  
-  #  {"groq-gpt-oss-120b": [
-  #    "groq-gpt-oss-20b",
-  #    "openrouter-gpt-oss-120b"
-  #  ]},
-  #  
-  #  # Fallback OpenRouter (último recurso)
-  #  {"openrouter-nemotron-ultra": [
-  #    "openrouter-nemotron-super",
-  #    "openrouter-gpt-oss-120b",
-  #    "openrouter-gemma4-31b"
-  #  ]},
-  #  
-  #  {"openrouter-gpt-oss-120b": [
-  #    "openrouter-gpt-oss-20b",
-  #    "openrouter-gemma4-31b"
-  #  ]}
-  #]
-
-
-# ============================================================
-# GENERAL SETTINGS
-# ============================================================
 litellm_settings:
   num_retries: 2
   request_timeout: 90
   allowed_fails: 2
-  # Cache desabilitado por padrão - prompts diversos não se beneficiam
-  # Para ativar, configure via variável de ambiente LITELLM_CACHE_ENABLED=true
   cache: false
-
 general_settings:
   log_level: WARNING
   max_parallel_requests: 100
-  master_key: "os.environ/LITELLM_MASTER_KEY"
-  # Database URL opcional - apenas para modo com persistência
-  # database_url: "os.environ/DATABASE_URL"
+  master_key: os.environ/LITELLM_MASTER_KEY
   disable_prerun: true
   enable_jwt_auth: false
-  enable_otel: false
-  prometheus_endpoint: "/metrics"
-  enable_prometheus: true

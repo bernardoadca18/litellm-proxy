@@ -3,11 +3,6 @@
 .env.local
 .env.*.local
 
-# Databases
-*.db
-*.db-journal
-litellm.db
-
 # Logs
 *.log
 logs/
@@ -16,13 +11,6 @@ logs/
 backups/
 *.backup
 *.tar.gz
-
-# Docker volumes
-volumes/
-redis-data/
-postgres-data/
-prometheus-data/
-grafana-data/
 
 # Temporary files
 *.tmp

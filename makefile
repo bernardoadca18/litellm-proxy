@@ -1,4 +1,4 @@
-.PHONY: help up down restart logs ps status health validate test clean backup
+.PHONY: help generate-config validate doctor up down restart logs ps health test clean shell
 
 RED=\033[0;31m
 GREEN=\033[0;32m
@@ -8,71 +8,88 @@ NC=\033[0m
 help:
 	@echo "${GREEN}LiteLLM Proxy Commands${NC}"
 	@echo ""
-	@echo "  ${YELLOW}Core Runtime:${NC}"
-	@echo "    make up              - Start core services (LiteLLM only, minimal RAM)"
-	@echo "    make down            - Stop all services"
-	@echo "    make restart         - Restart core services"
+	@echo "  ${YELLOW}Core:${NC}"
+	@echo "    make up              - Start LiteLLM proxy"
+	@echo "    make down            - Stop LiteLLM proxy"
+	@echo "    make restart         - Restart LiteLLM proxy"
 	@echo "    make logs            - View logs (last 100 lines)"
 	@echo "    make ps              - Show container status"
-	@echo "    make health          - Check health of running services"
+	@echo "    make health          - Check health"
 	@echo ""
-	@echo "  ${YELLOW}Optional Profiles:${NC}"
-	@echo "    make up-cache        - Start with Redis cache"
-	@echo "    make up-database     - Start with PostgreSQL"
-	@echo "    make up-monitoring   - Start with Prometheus/Grafana"
-	@echo "    make up-full         - Start all services"
-	@echo "    make down-monitoring - Stop monitoring services"
+	@echo "  ${YELLOW}Configuration:${NC}"
+	@echo "    make generate-config  - Generate config from providers.yml"
+	@echo "    make validate         - Validate config for errors"
+	@echo "    make doctor           - Run diagnostics"
 	@echo ""
-	@echo "  ${YELLOW}Validation & Testing:${NC}"
-	@echo "    make validate        - Validate config for errors"
-	@echo "    make test            - Run smoke test against API"
+	@echo "  ${YELLOW}Testing:${NC}"
+	@echo "    make test             - Run smoke test against API"
 	@echo ""
 	@echo "  ${YELLOW}Maintenance:${NC}"
-	@echo "    make backup          - Backup config and databases"
-	@echo "    make clean           - Remove all volumes (DESTRUCTIVE)"
+	@echo "    make clean            - Remove containers and volumes"
+
+generate-config:
+	@echo "${GREEN}Generating config from providers.yml...${NC}"
+	@python3 scripts/generate_config.py
+
+validate:
+	@echo "${GREEN}Validating configuration...${NC}"
+	@python3 scripts/validate_config.py config/litellm/config.yml
+
+doctor:
+	@echo "${GREEN}Running diagnostics...${NC}"
+	@python3 scripts/doctor.py
 
 up:
-	@echo "${GREEN}Starting core services (minimal mode)...${NC}"
+	@echo "${GREEN}Running diagnostics...${NC}"
+	@python3 scripts/doctor.py --preflight
+	@echo ""
+	@echo "${GREEN}Generating config...${NC}"
+	@python3 scripts/generate_config.py
+	@echo ""
+	@echo "${GREEN}Validating config...${NC}"
+	@python3 scripts/validate_config.py config/litellm/config.yml
+	@echo ""
+	@echo "${GREEN}Starting LiteLLM proxy...${NC}"
 	docker compose up -d
 	@echo "${GREEN}Waiting for LiteLLM to be ready...${NC}"
-	@sleep 5
-	@make health
-
-up-cache:
-	@echo "${GREEN}Starting with Redis cache...${NC}"
-	docker compose --profile cache up -d
-	@sleep 5
-	@make health
-
-up-database:
-	@echo "${GREEN}Starting with PostgreSQL database...${NC}"
-	docker compose --profile database up -d
-	@sleep 5
-	@make health
-
-up-monitoring:
-	@echo "${GREEN}Starting monitoring services...${NC}"
-	docker compose --profile monitoring up -d
-	@sleep 5
-	@make health
-
-up-full:
-	@echo "${GREEN}Starting all services...${NC}"
-	docker compose --profile cache --profile database --profile monitoring up -d
-	@sleep 10
-	@make health
+	@for i in $$(seq 1 30); do \
+		if curl -sf http://localhost:4000/health/readiness >/dev/null 2>&1; then \
+			echo "${GREEN}LiteLLM is ready${NC}"; \
+			exit 0; \
+		fi; \
+		sleep 1; \
+	done; \
+	echo "${RED}LiteLLM failed to start within 30s${NC}"; \
+	docker compose logs --tail=50 litellm; \
+	exit 1
 
 down:
-	@echo "${YELLOW}Stopping all services...${NC}"
+	@echo "${YELLOW}Stopping LiteLLM proxy...${NC}"
 	docker compose down
 
-down-monitoring:
-	@echo "${YELLOW}Stopping monitoring services...${NC}"
-	docker compose --profile monitoring down
-
 restart:
-	@echo "${YELLOW}Restarting core services...${NC}"
-	docker compose restart
+	@echo "${GREEN}Running diagnostics...${NC}"
+	@python3 scripts/doctor.py --preflight
+	@echo ""
+	@echo "${GREEN}Generating config...${NC}"
+	@python3 scripts/generate_config.py
+	@echo ""
+	@echo "${GREEN}Validating config...${NC}"
+	@python3 scripts/validate_config.py config/litellm/config.yml
+	@echo ""
+	@echo "${YELLOW}Recreating LiteLLM proxy...${NC}"
+	docker compose up -d --force-recreate
+	@echo "${GREEN}Waiting for LiteLLM to be ready...${NC}"
+	@for i in $$(seq 1 30); do \
+		if curl -sf http://localhost:4000/health/readiness >/dev/null 2>&1; then \
+			echo "${GREEN}LiteLLM is ready${NC}"; \
+			exit 0; \
+		fi; \
+		sleep 1; \
+	done; \
+	echo "${RED}LiteLLM failed to start within 30s${NC}"; \
+	docker compose logs --tail=50 litellm; \
+	exit 1
 
 logs:
 	docker compose logs -f --tail=100
@@ -84,29 +101,15 @@ health:
 	@echo "${GREEN}Checking service health...${NC}"
 	@./scripts/healthcheck.sh
 
-validate:
-	@echo "${GREEN}Validating configuration...${NC}"
-	@python3 scripts/validate_config.py config/litellm/config.yml
-
 test:
 	@echo "${GREEN}Running smoke test...${NC}"
 	@python3 test_api.py
 
-backup:
-	@echo "${GREEN}Creating backup...${NC}"
-	@./scripts/backup.sh
-
 clean:
-	@echo "${RED}WARNING: This will delete all volumes and data!${NC}"
+	@echo "${RED}WARNING: This will delete all containers and volumes!${NC}"
 	@echo "${RED}Type 'yes' to confirm:${NC} " && read ans && [ "$$ans" = "yes" ]
-	docker compose down -v
-	@echo "${RED}All volumes removed${NC}"
+	docker compose down -v --remove-orphans
+	@echo "${RED}All containers and volumes removed${NC}"
 
-shell-litellm:
+shell:
 	docker exec -it litellm-proxy /bin/sh
-
-shell-redis:
-	docker exec -it litellm-redis redis-cli -a "${REDIS_PASSWORD}"
-
-shell-postgres:
-	docker exec -it litellm-postgres psql -U "${POSTGRES_USER:-litellm}" -d "${POSTGRES_DB:-litellm}"

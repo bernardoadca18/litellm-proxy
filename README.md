@@ -1,9 +1,6 @@
 # LiteLLM Proxy Gateway
 
-**A lightweight, production-grade AI API gateway with multi-provider load balancing, key pooling, and optional observability stack.**
-
-[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
-[![LiteLLM](https://img.shields.io/badge/LiteLLM-Proxy-8A2BE2)](https://github.com/BerriAI/litellm)
+**Minimal AI API gateway with multi-provider load balancing and key pooling.**
 
 ## Quick Start
 
@@ -17,7 +14,7 @@ cp .env.example .env
 # GROQ_API_KEY_1=your-key
 # LITELLM_MASTER_KEY=your-secret-key
 
-# 3. Start minimal runtime (LiteLLM only, ~200MB RAM)
+# 3. Start proxy
 make up
 
 # 4. Test
@@ -37,7 +34,7 @@ Your proxy is now live at `http://localhost:4000/v1`
                                 ▼
                     ┌─────────────────────────┐
                     │       LiteLLM           │
-                    │  - 1 worker (default)   │
+                    │  - 1 worker             │
                     │  - simple-shuffle       │
                     │  - key pooling          │
                     │  - automatic cooldown   │
@@ -57,42 +54,10 @@ Your proxy is now live at `http://localhost:4000/v1`
                         └───────────┘
 ```
 
-## Runtime Modes
+## Requirements
 
-### Core (Default) - Minimal RAM
-```bash
-make up
-```
-- LiteLLM only
-- ~200MB RAM
-- No database, no cache, no monitoring
-- Recommended for most deployments
-
-### With Redis Cache
-```bash
-make up-cache
-```
-- LiteLLM + Redis
-- Use when you need response caching or multi-worker state
-
-### With PostgreSQL
-```bash
-make up-database
-```
-- Adds PostgreSQL for persistence, teams, budgets
-- Not needed for simple key pooling
-
-### With Monitoring
-```bash
-make up-monitoring
-```
-- Prometheus + Grafana + exporters
-- Optional observability stack
-
-### Full Stack
-```bash
-make up-full
-```
+- Docker with Docker Compose
+- ~300MB RAM (idle)
 
 ## Key Features
 
@@ -106,11 +71,6 @@ Distribute requests across multiple API keys for the same model:
 - **simple-shuffle**: Random selection with equal weights
 - Automatic cooldown on failures (60s default)
 - Failover to next available key in group
-
-### RAM Optimized
-- 1 worker by default (I/O bound workload)
-- No database required for core function
-- Optional services via Docker Compose profiles
 
 ## Configured Models
 
@@ -164,62 +124,58 @@ curl http://localhost:4000/v1/chat/completions \
    GEMINI_API_KEY_12=your-new-key
    ```
 
-2. Add to `config/litellm/config.yml` under the model group:
+2. Add to `config/providers.yml`:
    ```yaml
-   - model_name: gemini-3.6-flash
-     litellm_params:
-       model: gemini/gemini-3.6-flash
-       api_key: "os.environ/GEMINI_API_KEY_12"
-       rpm: 15
-       timeout: 60
+   gemini:
+     keys:
+       - GEMINI_API_KEY_12
    ```
 
-3. Recreate:
+3. Regenerate config and restart:
    ```bash
-   docker compose up -d --force-recreate litellm
+   make generate-config
+   make up
    ```
 
 ## Makefile Commands
 
 | Command | Description |
 |---------|-------------|
-| `make up` | Start core services (minimal) |
-| `make down` | Stop all services |
+| `make up` | Start proxy |
+| `make down` | Stop proxy |
 | `make logs` | View logs |
-| `make health` | Check service health |
+| `make health` | Check health |
+| `make generate-config` | Generate config from providers.yml |
 | `make validate` | Validate config |
+| `make doctor` | Run diagnostics |
 | `make test` | Run smoke test |
-| `make backup` | Backup config |
-| `make up-monitoring` | Start monitoring stack |
-| `make up-database` | Start with PostgreSQL |
-| `make clean` | Remove all volumes |
-
-## Resource Requirements
-
-| Mode | RAM | Services |
-|------|-----|----------|
-| Core | ~200MB | LiteLLM |
-| + Cache | +64MB | + Redis |
-| + Database | +256MB | + PostgreSQL |
-| + Monitoring | +512MB | + Prometheus/Grafana |
+| `make clean` | Remove containers and volumes |
 
 ## Configuration
 
-### Workers
-- Default: 1 worker (recommended)
-- Use 2+ only if benchmarks show necessity
-- Set via `LITELLM_NUM_WORKERS` in `.env`
+### providers.yml (Source of Truth)
 
-### Log Level
-- `WARNING`: Production (default)
-- `INFO`: Troubleshooting
-- `DEBUG`: Development
+`config/providers.yml` defines providers, keys, and models. The actual `config/litellm/config.yml` is generated from it.
+
+```yaml
+providers:
+  gemini:
+    keys:
+      - GEMINI_API_KEY_1
+      - GEMINI_API_KEY_2
+    models:
+      - name: gemini-3.6-flash
+        model: gemini/gemini-3.6-flash
+        rpm: 15
+        timeout: 60
+```
 
 ### Routing
-Configured in `config/litellm/config.yml`:
+
+Configured in `config/providers.yml`:
 ```yaml
-router_settings:
-  routing_strategy: "simple-shuffle"
+router:
+  routing_strategy: simple-shuffle
   num_retries: 2
   cooldown_time: 60
   allowed_fails: 2
@@ -229,12 +185,14 @@ router_settings:
 
 - Never commit `.env` to version control
 - All secrets stay in environment variables
-- Database and Redis not exposed on host ports
 - Use `LITELLM_MASTER_KEY` for API authentication
 
 ## Troubleshooting
 
 ```bash
+# Run diagnostics
+make doctor
+
 # Check health
 make health
 

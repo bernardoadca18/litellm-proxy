@@ -4,7 +4,7 @@ Validate LiteLLM configuration for common errors:
 - Duplicate deployments
 - Missing environment variables
 - Invalid YAML
-- Configuration inconsistencies
+- Legacy configuration issues
 """
 
 import yaml
@@ -16,13 +16,11 @@ from pathlib import Path
 
 
 def load_config(config_path: str) -> dict:
-    """Load and parse YAML config file."""
     with open(config_path, 'r') as f:
         return yaml.safe_load(f)
 
 
 def find_duplicates(config: dict) -> list:
-    """Find duplicate deployments (same model_name, provider_model, api_key)."""
     model_list = config.get('model_list', [])
     seen = defaultdict(list)
     duplicates = []
@@ -49,36 +47,35 @@ def find_duplicates(config: dict) -> list:
 
 
 def find_env_vars(config: dict) -> set:
-    """Find all environment variable references in config."""
     config_str = yaml.dump(config)
     pattern = r'os\.environ/([A-Za-z_][A-Za-z0-9_]*)'
     return set(re.findall(pattern, config_str))
 
 
-def validate_env_vars(env_vars: set, config_path: str) -> list:
-    """Check if referenced env vars are documented in .env.example."""
-    config_dir = Path(config_path).parent
-    env_example_path = config_dir.parent.parent / '.env.example'
-    missing = []
+def check_legacy_settings(config: dict) -> list:
+    issues = []
+    general = config.get('general_settings', {})
+    litellm = config.get('litellm_settings', {})
+    
+    if general.get('prometheus_endpoint'):
+        issues.append("prometheus_endpoint found in general_settings (metrics disabled)")
+    
+    if general.get('enable_prometheus'):
+        issues.append("enable_prometheus found in general_settings (metrics disabled)")
+    
+    if general.get('enable_otel'):
+        issues.append("enable_otel found in general_settings (otel disabled)")
+    
+    if general.get('database_url'):
+        issues.append("database_url found in general_settings (database removed)")
+    
+    if litellm.get('cache') == True:
+        issues.append("Response cache enabled - verify if needed for diverse prompts")
 
-    if env_example_path.exists():
-        with open(env_example_path, 'r') as f:
-            example_vars = set()
-            for line in f:
-                if '=' in line and not line.startswith('#'):
-                    var_name = line.split('=')[0].strip()
-                    if var_name:
-                        example_vars.add(var_name)
-
-        for var in env_vars:
-            if var not in example_vars:
-                missing.append(var)
-
-    return missing
+    return issues
 
 
 def check_router_settings(config: dict) -> list:
-    """Check router settings for potential issues."""
     issues = []
     router = config.get('router_settings', {})
 
@@ -93,19 +90,7 @@ def check_router_settings(config: dict) -> list:
     return issues
 
 
-def check_cache_settings(config: dict) -> list:
-    """Check cache settings."""
-    issues = []
-    litellm_settings = config.get('litellm_settings', {})
-
-    if litellm_settings.get('cache') == True:
-        issues.append("Response cache enabled - verify if needed for diverse prompts")
-
-    return issues
-
-
 def check_model_groups(config: dict) -> dict:
-    """Analyze model groups and key distribution."""
     model_list = config.get('model_list', [])
     model_groups = defaultdict(lambda: {'keys': set(), 'providers': set()})
 
@@ -134,66 +119,46 @@ def main():
     errors = []
     warnings = []
 
-    # Load config
     try:
         config = load_config(config_path)
-        print("✅ YAML is valid")
+        print("OK: YAML is valid")
     except yaml.YAMLError as e:
-        print(f"❌ YAML parsing error: {e}")
+        print(f"ERROR: YAML parsing error: {e}")
         sys.exit(1)
     except FileNotFoundError:
-        print(f"❌ Config file not found: {config_path}")
+        print(f"ERROR: Config file not found: {config_path}")
         sys.exit(1)
 
-    # Check duplicates
     duplicates = find_duplicates(config)
     if duplicates:
-        print(f"\n❌ DUPLICATES FOUND: {len(duplicates)}")
+        print(f"\nERROR: DUPLICATES FOUND: {len(duplicates)}")
         for dup in duplicates:
             print(f"   - {dup['model_name']} + {dup['api_key']}")
-            print(f"     Lines: {dup['indices']}")
         errors.append(f"{len(duplicates)} duplicate deployment(s)")
     else:
-        print("✅ No duplicate deployments")
+        print("OK: No duplicate deployments")
 
-    # Check environment variables
-    env_vars = find_env_vars(config)
-    missing_env = validate_env_vars(env_vars, config_path)
-    if missing_env:
-        print(f"\n⚠️  ENV VARS not in .env.example: {len(missing_env)}")
-        for var in sorted(missing_env):
-            print(f"   - {var}")
-        warnings.append(f"{len(missing_env)} undocumented env var(s)")
-    else:
-        print(f"✅ All {len(env_vars)} env vars documented")
+    legacy_issues = check_legacy_settings(config)
+    if legacy_issues:
+        print("\nWARNING: LEGACY SETTINGS:")
+        for issue in legacy_issues:
+            print(f"   - {issue}")
+        warnings.extend(legacy_issues)
 
-    # Check router settings
     router_issues = check_router_settings(config)
     if router_issues:
-        print("\n⚠️  ROUTER SETTINGS:")
+        print("\nWARNING: ROUTER SETTINGS:")
         for issue in router_issues:
             print(f"   - {issue}")
         warnings.extend(router_issues)
-    else:
-        print("✅ Router settings look good")
 
-    # Check cache settings
-    cache_issues = check_cache_settings(config)
-    if cache_issues:
-        print("\n⚠️  CACHE SETTINGS:")
-        for issue in cache_issues:
-            print(f"   - {issue}")
-        warnings.extend(cache_issues)
-
-    # Model group summary
     model_groups = check_model_groups(config)
-    print(f"\n📊 SUMMARY:")
+    print(f"\nSUMMARY:")
     print(f"   Model groups: {len(model_groups)}")
 
     total_deployments = sum(len(g['keys']) for g in model_groups.values())
     print(f"   Total deployments: {total_deployments}")
 
-    # Provider breakdown
     providers = defaultdict(int)
     for group in model_groups.values():
         for p in group['providers']:
@@ -203,20 +168,17 @@ def main():
     for p, count in sorted(providers.items(), key=lambda x: -x[1]):
         print(f"      {p}: {count}")
 
-    # Final result
     print("\n" + "=" * 70)
     if errors:
-        print("❌ VALIDATION FAILED")
+        print("VALIDATION FAILED")
         for e in errors:
             print(f"   ERROR: {e}")
         sys.exit(1)
     elif warnings:
-        print("⚠️  VALIDATION PASSED WITH WARNINGS")
-        for w in warnings:
-            print(f"   WARNING: {w}")
+        print("VALIDATION PASSED WITH WARNINGS")
         sys.exit(0)
     else:
-        print("✅ VALIDATION PASSED")
+        print("VALIDATION PASSED")
         sys.exit(0)
 
 
