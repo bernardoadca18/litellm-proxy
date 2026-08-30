@@ -57,7 +57,25 @@ Seu proxy está disponível em `http://localhost:4000/v1`
 ## Requisitos
 
 - Docker com Docker Compose
-- ~260MB RAM (idle)
+- ~240MB RAM (idle)
+
+## Descoberta de Chaves
+
+As chaves API são descobertas automaticamente do `.env` por prefixo:
+
+```
+# .env
+GEMINI_API_KEY_1=sua-chave
+GEMINI_API_KEY_2=sua-chave
+GEMINI_API_KEY_12=sua-chave  # Pode adicionar qualquer número
+```
+
+Depois execute:
+```bash
+make restart
+```
+
+Não é necessário editar `providers.yml` ao adicionar chaves - elas são descobertas automaticamente.
 
 ## Funcionalidades
 
@@ -117,20 +135,6 @@ curl http://localhost:4000/v1/chat/completions \
   }'
 ```
 
-## Adicionando Novas Chaves
-
-1. Adicionar ao `.env`:
-   ```
-   GEMINI_API_KEY_12=sua-nova-chave
-   ```
-
-2. Reiniciar:
-   ```bash
-   make restart
-   ```
-
-**Não é necessário editar `providers.yml`** - as chaves são descobertas automaticamente por prefixo.
-
 ## Comandos do Makefile
 
 | Comando | Descrição |
@@ -148,9 +152,9 @@ curl http://localhost:4000/v1/chat/completions \
 
 ## Configuração
 
-### providers.yml (Fonte da Verdade)
+### providers.yml
 
-`config/providers.yml` define providers, chaves e modelos. O `config/litellm/config.yml` é gerado a partir dele.
+`config/providers.yml` define providers, prefixos de chaves, modelos e metadata:
 
 ```yaml
 providers:
@@ -162,6 +166,7 @@ providers:
         mode: chat
         rpm: 15
         timeout: 60
+        supports_function_calling: true
 ```
 
 ### Roteamento

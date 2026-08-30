@@ -34,7 +34,7 @@ services:
     networks:
       - public
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:4000/health/readiness || exit 1"]
+      test: ["CMD-SHELL", "python3 -c \"import urllib.request; urllib.request.urlopen('http://localhost:4000/health/readiness')\""]
       interval: 30s
       timeout: 10s
       retries: 3

@@ -57,7 +57,7 @@ Your proxy is now live at `http://localhost:4000/v1`
 ## Requirements
 
 - Docker with Docker Compose
-- ~300MB RAM (idle)
+- ~240MB RAM (idle)
 
 ## Key Features
 
@@ -71,6 +71,24 @@ Distribute requests across multiple API keys for the same model:
 - **simple-shuffle**: Random selection with equal weights
 - Automatic cooldown on failures (60s default)
 - Failover to next available key in group
+
+## Key Discovery
+
+API keys are discovered automatically from `.env` by prefix:
+
+```
+# .env
+GEMINI_API_KEY_1=your-key
+GEMINI_API_KEY_2=your-key
+GEMINI_API_KEY_12=your-key  # Can add any number
+```
+
+Then run:
+```bash
+make restart
+```
+
+No need to edit `providers.yml` when adding keys - they are discovered automatically.
 
 ## Configured Models
 
@@ -117,32 +135,13 @@ curl http://localhost:4000/v1/chat/completions \
   }'
 ```
 
-## Adding New Keys
-
-1. Add to `.env`:
-   ```
-   GEMINI_API_KEY_12=your-new-key
-   ```
-
-2. Add to `config/providers.yml`:
-   ```yaml
-   gemini:
-     keys:
-       - GEMINI_API_KEY_12
-   ```
-
-3. Regenerate config and restart:
-   ```bash
-   make generate-config
-   make up
-   ```
-
 ## Makefile Commands
 
 | Command | Description |
 |---------|-------------|
 | `make up` | Start proxy |
 | `make down` | Stop proxy |
+| `make restart` | Restart proxy |
 | `make logs` | View logs |
 | `make health` | Check health |
 | `make generate-config` | Generate config from providers.yml |
@@ -153,21 +152,21 @@ curl http://localhost:4000/v1/chat/completions \
 
 ## Configuration
 
-### providers.yml (Source of Truth)
+### providers.yml
 
-`config/providers.yml` defines providers, keys, and models. The actual `config/litellm/config.yml` is generated from it.
+`config/providers.yml` defines providers, key prefixes, models, and metadata:
 
 ```yaml
 providers:
   gemini:
-    keys:
-      - GEMINI_API_KEY_1
-      - GEMINI_API_KEY_2
+    key_prefix: GEMINI_API_KEY_
     models:
       - name: gemini-3.6-flash
         model: gemini/gemini-3.6-flash
+        mode: chat
         rpm: 15
         timeout: 60
+        supports_function_calling: true
 ```
 
 ### Routing
