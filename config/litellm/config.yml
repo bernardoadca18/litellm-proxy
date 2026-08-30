@@ -2497,27 +2497,19 @@ model_list:
     model_info:
       mode: chat
 
-  - model_name: groq-qwen3.6-27b
-    litellm_params:
-      model: groq/qwen/qwen3.6-27b
-      api_key: "os.environ/GROQ_API_KEY_4"
-      rpm: 30
-      tpm: 8000
-      timeout: 60
-    model_info:
-      mode: chat
-      supports_function_calling: true
-  
-
 # ============================================================
-# ROUTER SETTINGS - ESTRATÉGIA DE FALLBACK
+# ROUTER SETTINGS - ESTRATÉGIA DE ROTEAMENTO
 # ============================================================
+# simple-shuffle: distribuição uniforme entre deployments saudáveis
+# Cooldown automático para deployments com falhas
+# Fallback para próxima credencial disponível no mesmo model group
 router_settings:
-  routing_strategy: "least-busy"
-  num_retries: 3
+  routing_strategy: "simple-shuffle"
+  num_retries: 2
   request_timeout: 90
-  cooldown_time: 30
+  cooldown_time: 60
   allowed_fails: 2
+  retry_after: 5
   enable_loadbalancing: true
   
   # Fallbacks hierárquicos
@@ -2587,24 +2579,20 @@ router_settings:
 # GENERAL SETTINGS
 # ============================================================
 litellm_settings:
-  num_retries: 3
+  num_retries: 2
   request_timeout: 90
-  allowed_fails: 3
-  cache: true
-  cache_params:
-    type: redis
-    ttl: 3600
-    host: redis
-    port: 6379
-    password: "os.environ/REDIS_PASSWORD"
+  allowed_fails: 2
+  # Cache desabilitado por padrão - prompts diversos não se beneficiam
+  # Para ativar, configure via variável de ambiente LITELLM_CACHE_ENABLED=true
+  cache: false
 
 general_settings:
-  log_level: INFO
+  log_level: WARNING
   max_parallel_requests: 100
   master_key: "os.environ/LITELLM_MASTER_KEY"
-  database_url: "os.environ/DATABASE_URL"
-  proxy_batch_write_at: 60
-  disable_prerun: false
+  # Database URL opcional - apenas para modo com persistência
+  # database_url: "os.environ/DATABASE_URL"
+  disable_prerun: true
   enable_jwt_auth: false
   enable_otel: false
   prometheus_endpoint: "/metrics"

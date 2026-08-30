@@ -1,0 +1,238 @@
+# =============================================================================
+# Declarative provider configuration for LiteLLM Proxy
+# =============================================================================
+# This is the SINGLE SOURCE OF TRUTH for providers, API keys, and models.
+# The actual config/litellm/config.yml is GENERATED from this file by:
+#
+#   python scripts/generate_config.py
+#
+# To add a new API key: add it to the provider's keys list.
+# To add a new model: add it to the provider's models list.
+# To remove a model: remove it from the list.
+#
+# Then run: make generate-config  (or python scripts/generate_config.py)
+# Then run: make validate         (to check for errors)
+# Then:     docker compose up -d --force-recreate litellm
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Providers with API key pooling
+# Each model under a provider gets one deployment per key.
+# Keys are referenced as os.environ/<KEY_NAME> in the generated config.
+# -----------------------------------------------------------------------------
+
+providers:
+  gemini:
+    keys:
+      - GEMINI_API_KEY_1
+      - GEMINI_API_KEY_2
+      - GEMINI_API_KEY_3
+      - GEMINI_API_KEY_4
+      - GEMINI_API_KEY_5
+      - GEMINI_API_KEY_6
+      - GEMINI_API_KEY_7
+      - GEMINI_API_KEY_8
+      - GEMINI_API_KEY_9
+      - GEMINI_API_KEY_10
+      - GEMINI_API_KEY_11
+    models:
+      - name: gemini-3.6-flash
+        model: gemini/gemini-3.6-flash
+        rpm: 15
+        tpm: 3000000
+        timeout: 60
+      - name: gemini-3.1-pro
+        model: gemini/gemini-3.1-pro-preview
+        rpm: 5
+        tpm: 5000000
+        timeout: 90
+      - name: gemini-3.5-flash-lite
+        model: gemini/gemini-3.5-flash-lite
+        rpm: 15
+        tpm: 10000000
+        timeout: 45
+
+  openrouter:
+    keys:
+      - OPENROUTER_API_KEY_1
+      - OPENROUTER_API_KEY_2
+      - OPENROUTER_API_KEY_3
+      - OPENROUTER_API_KEY_4
+      - OPENROUTER_API_KEY_5
+      - OPENROUTER_API_KEY_6
+      - OPENROUTER_API_KEY_7
+      - OPENROUTER_API_KEY_8
+      - OPENROUTER_API_KEY_9
+      - OPENROUTER_API_KEY_10
+      - OPENROUTER_API_KEY_11
+    models:
+      - name: openrouter-embed-vl
+        model: openrouter/nvidia/llama-nemotron-embed-vl-1b-v2
+        rpm: 20
+        timeout: 30
+      - name: openrouter-gemma4-26b
+        model: openrouter/google/gemma-4-26b-a4b
+        rpm: 20
+        timeout: 60
+      - name: openrouter-gemma4-31b
+        model: openrouter/google/gemma-4-31b
+        rpm: 20
+        timeout: 60
+      - name: openrouter-gpt-oss-120b
+        model: openrouter/openai/gpt-oss-120b
+        rpm: 20
+        timeout: 90
+      - name: openrouter-gpt-oss-20b
+        model: openrouter/openai/gpt-oss-20b
+        rpm: 20
+        timeout: 60
+      - name: openrouter-laguna-m1
+        model: openrouter/poolside/laguna-m.1
+        rpm: 20
+        timeout: 120
+      - name: openrouter-laguna-xs2
+        model: openrouter/poolside/laguna-xs.2
+        rpm: 20
+        timeout: 60
+      - name: openrouter-nemotron-12b-vl
+        model: openrouter/nvidia/nemotron-nano-12b-2-vl
+        rpm: 20
+        timeout: 60
+      - name: openrouter-nemotron-nano-30b
+        model: openrouter/nvidia/nemotron-3-nano-30b-a3b
+        rpm: 20
+        timeout: 60
+      - name: openrouter-nemotron-nano-9b
+        model: openrouter/nvidia/nemotron-nano-9b-v2
+        rpm: 20
+        timeout: 60
+      - name: openrouter-nemotron-omni
+        model: openrouter/nvidia/nemotron-3-nano-omni
+        rpm: 20
+        timeout: 60
+      - name: openrouter-nemotron-super
+        model: openrouter/nvidia/nemotron-3-super
+        rpm: 20
+        timeout: 90
+      - name: openrouter-nemotron-ultra
+        model: openrouter/nvidia/nemotron-3-ultra
+        rpm: 20
+        timeout: 120
+      - name: openrouter-north-mini-code
+        model: openrouter/cohere/north-mini-code
+        rpm: 20
+        timeout: 60
+      - name: openrouter-owl-alpha
+        model: openrouter/openrouter/owl-alpha
+        rpm: 20
+        timeout: 90
+      - name: openrouter-seedream-4.5
+        model: openrouter/bytedance-seed/seedream-4.5
+        rpm: 10
+        timeout: 120
+
+  groq:
+    keys:
+      - GROQ_API_KEY_1
+      - GROQ_API_KEY_2
+      - GROQ_API_KEY_3
+      - GROQ_API_KEY_4
+    models:
+      - name: groq-gpt-oss-120b
+        model: groq/openai/gpt-oss-120b
+        rpm: 30
+        tpm: 8000
+        timeout: 90
+      - name: groq-gpt-oss-20b
+        model: groq/openai/gpt-oss-20b
+        rpm: 30
+        tpm: 8000
+        timeout: 60
+      - name: groq-llama3.1-8b
+        model: groq/llama-3.1-8b-instant
+        rpm: 30
+        tpm: 6000
+        timeout: 30
+      - name: groq-llama3.3-70b
+        model: groq/llama-3.3-70b-versatile
+        rpm: 30
+        tpm: 12000
+        timeout: 90
+      - name: groq-llama4-scout
+        model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+        rpm: 30
+        tpm: 30000
+        timeout: 60
+      - name: groq-qwen3-32b
+        model: groq/qwen/qwen3-32b
+        rpm: 30
+        tpm: 6000
+        timeout: 60
+      - name: groq-qwen3.6-27b
+        model: groq/qwen/qwen3.6-27b
+        rpm: 30
+        tpm: 8000
+        timeout: 60
+
+# -----------------------------------------------------------------------------
+# Ollama - local models, no key pooling
+# These models are accessed on demand and do not participate in key rotation.
+# -----------------------------------------------------------------------------
+ollama:
+  models:
+    - name: llama3.2-local
+      model: ollama/llama3.2
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+      info:
+        id: "ollama/llama3.2"
+        max_tokens: 8192
+        max_input_tokens: 131072
+        input_cost_per_token: 0.0
+        output_cost_per_token: 0.0
+    - name: qwen-local
+      model: ollama/qwen3.5:9b
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+    - name: gemma-local
+      model: ollama/gemma4:e4b
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+    - name: phi4-mini-local
+      model: ollama/phi4-mini
+      api_base: "os.environ/OLLAMA_API_BASE"
+      timeout: 120
+    - name: ollama-embed
+      model: ollama/mxbai-embed-large
+      api_base: "os.environ/OLLAMA_API_BASE"
+      info:
+        id: "ollama/mxbai-embed-large"
+    - name: qwen3.5-abliterated-local
+      model: ollama_chat/huihui_ai/qwen3.5-abliterated:9b
+      api_base: "os.environ/OLLAMA_API_BASE"
+
+# -----------------------------------------------------------------------------
+# Router settings
+# -----------------------------------------------------------------------------
+router:
+  routing_strategy: simple-shuffle
+  num_retries: 2
+  request_timeout: 90
+  cooldown_time: 60
+  allowed_fails: 2
+  retry_after: 5
+  enable_loadbalancing: true
+
+# -----------------------------------------------------------------------------
+# General settings
+# -----------------------------------------------------------------------------
+settings:
+  log_level: WARNING
+  max_parallel_requests: 100
+  request_timeout: 90
+  num_retries: 2
+  allowed_fails: 2
+  prometheus_endpoint: "/metrics"
+  enable_prometheus: true
+  disable_prerun: false
+  enable_otel: false
