@@ -2035,13 +2035,13 @@ model_list:
   model_info:
     mode: chat
 router_settings:
-  routing_strategy: simple-shuffle
+  routing_strategy: latency-based-routing
   num_retries: 2
   request_timeout: 90
   cooldown_time: 60
   allowed_fails: 2
   retry_after: 5
-  enable_loadbalancing: true
+  enable_loadbalancing: false
 litellm_settings:
   num_retries: 2
   request_timeout: 90
